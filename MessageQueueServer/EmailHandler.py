@@ -1,13 +1,13 @@
 import smtplib
 from email.mime.text import MIMEText
-
+import os
 
 class EmailHandler:
     def __init__(self):
         pubEmailInfo = dict({
             "SMTP_SERVER": "smtp.gmail.com",
-            "SMTP_ID": "ogyuchan01@gmail.com",
-            "SMTP_PW": "dduxhtopzgirergv"
+            "SMTP_ID": os.getenv("HOST_EMAIL"),
+            "SMTP_PW": os.getenv("HOST_PASSWD")
         })
         self.smtpServer = pubEmailInfo["SMTP_SERVER"]
         self.smtpId = pubEmailInfo["SMTP_ID"]

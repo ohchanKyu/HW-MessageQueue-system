@@ -102,3 +102,53 @@ python3 ./MessageQueueServer/main.py
 ```Bash
 python3 ./MessageQueueClient/main.py
 ```
+
+<br>
+
+## **Test Application**
+**[클라이언트 초기 화면]** <br>
+![image](https://github.com/user-attachments/assets/3c0a4728-7e6c-4159-ac12-fdf159e9e34d)
+
+<br>
+
+**[클라이언트 Command 1번]** <br>
+- 클라이언트는 서버에게 구독 가능한 리스트 요청
+- 서버는 클라이언트에게 리스트 메세지로 응답
+![image](https://github.com/user-attachments/assets/a233e9c8-11f7-4448-822a-0ad96d4c8963)
+- 리스트 요청을 받은 서버쪽 출력
+![image](https://github.com/user-attachments/assets/510ce449-8f7b-4d85-9440-201035906287)
+
+<br>
+
+**[클라이언트 Command 2번]** <br>
+- 서버에게 구독을 요청 ( SpringBoot / NodeJs / React / Django 중 1가지 선택 )
+- 구독할 Subject와 이메일 입력
+- 서버는 해당 Subject와 Email을 전달받고 응답 메세지를 생성
+- 메시지 응답으로 구독한 Subject 및 Subject에 대한 Content를 전달
+![image](https://github.com/user-attachments/assets/8225dd8b-aef5-46ee-a7f5-d8cebb4a78b4)
+- 구독 요청을 받은 서버쪽 출력
+![image](https://github.com/user-attachments/assets/cdbaa68f-c158-4e27-a002-6788ea0ab24a)
+
+<br>
+
+**[클라이언트 Command 3번]** <br>
+﻿- 클라이언트 측에서 구독한 Subject에 대해 내용을 추가
+- 서버측에서는 해당 요청을 받고, 모든 구독자들에게 메시지 전달 및 이메일 전송
+![image](https://github.com/user-attachments/assets/abeeec1a-a51a-4194-a23a-731d187c44c8)
+- 실제로 받은 이메일 화면
+![image](https://github.com/user-attachments/assets/553b2d6b-a0b0-4b2e-bf78-ec63dba0b426)
+
+<br>
+
+**[클라이언트 Command 4번]** <br>
+- 클라이언트에게 기존의 메뉴를 다시 출력
+![image](https://github.com/user-attachments/assets/e22aa1a5-535e-41b6-9b01-0e737e4fbc69)
+
+<br>
+
+**[클라이언트 Command q 입력]** <br>
+- 클라이언트 프로그램 종료
+![image](https://github.com/user-attachments/assets/a6d1f4d0-5ba0-405f-bf9f-8b50d7dff930)
+- 클라이언트 프로그램 종료 시 서버 측 출력
+![image](https://github.com/user-attachments/assets/2b296c99-27c1-4502-9bf4-3ad1d6de6add)
+
